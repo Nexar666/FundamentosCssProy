@@ -1,0 +1,544 @@
+/* ============================================================
+   BLOQUE 1: HEADER Y NAVEGACIÓN
+   ============================================================ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px;
+    border-bottom: 2px solid #2e7d32;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-container img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #22c55e;
+    text-decoration: none;
+}
+
+.brand:hover {
+    color: #1a5a2a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    border-radius: 40px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 40px; 
+}
+
+nav a:hover {
+    background-color: #22c55e;
+    color: white;
+    text-decoration: none;
+}
+
+/* ============================================================
+   BLOQUE 2: SECCIÓN HERO (INICIO)
+   ============================================================ */
+
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    border-radius: 28px;
+    margin-bottom: 30px;
+}
+
+.hero-section h1 {
+    color: #166534;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ============================================================
+   BLOQUE 3: SECCIÓN INTERESES
+   ============================================================ */
+
+.intereses-section {
+    background: white;
+    border-radius: 28px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.intereses-section h2 {
+    color: #166534;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #c8e6c9;
+    padding-bottom: 10px;
+}
+
+.intereses-card {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.intereses-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.intereses-list li {
+    padding: 12px 16px;
+    background: white;
+    border-radius: 12px;
+    border-left: 4px solid #22c55e;
+    color: #333;
+}
+
+.intereses-list li:hover {
+    background: #f0fdf4;
+    transform: translateX(4px);
+}
+
+.intereses-list strong {
+    color: #22c55e;
+}
+
+/* ============================================================
+   BLOQUE 4: SECCIÓN TESTIMONIOS
+   ============================================================ */
+
+.testimonios-section {
+    background: white;
+    border-radius: 28px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.testimonios-section h2 {
+    color: #166534;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #c8e6c9;
+    padding-bottom: 10px;
+}
+
+.testimonios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.testimonio-card {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonio-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.testimonio-card p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.testimonio-card h4 {
+    color: #22c55e;
+}
+
+/* ============================================================
+   BLOQUE 5: SECCIÓN PLANES Y TABLA
+   ============================================================ */
+
+.planes-section {
+    background: white;
+    border-radius: 28px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.planes-section h2 {
+    color: #166534;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #c8e6c9;
+    padding-bottom: 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.planes-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.planes-table th {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.planes-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.planes-table tr:hover {
+    background-color: #f0fdf4;
+}
+
+.planes-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+ 
+.price {
+    font-weight: bold;
+    color: #22c55e;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.planes-cta {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* ============================================================
+   BLOQUE 6: SECCIÓN CONTACTO
+   ============================================================ */
+
+.contacto-section {
+    background: white;
+    border-radius: 28px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.contacto-section h2 {
+    color: #166534;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #c8e6c9;
+    padding-bottom: 10px;
+}
+
+.contacto-card {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.contacto-item h3 {
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+.contacto-item p {
+    color: #555;
+    margin: 5px 0;
+}
+
+hr {
+    margin: 25px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links h3 {
+    color: #22c55e;
+    margin-bottom: 15px;
+}
+
+.social-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    color: #555;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #c52222;
+}
+
+/* ============================================================
+   BLOQUE 7: SECCIÓN VIDEO
+   ============================================================ */
+
+.video-section {
+    background: white;
+    border-radius: 28px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.video-section h2 {
+    color: #166534;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #c8e6c9;
+    padding-bottom: 10px;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+/* ============================================================
+   BLOQUE 8: SECCIÓN SUGERENCIAS (FORMULARIO)
+   ============================================================ */
+ 
+.sugerencias-section h2 {
+    color: #166534;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #c8e6c9;
+    padding-bottom: 10px;
+}
+
+.sugerencias-form {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.sugerencias-form input:not([type="radio"]):not([type="checkbox"]),
+.sugerencias-form select,
+.sugerencias-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+.sugerencias-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.sugerencias-form legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #166534;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+}
+ 
+/* ============================================================
+   BLOQUE 9: BOTONES GLOBALES
+   ============================================================ */
+
+.btn-primario {
+    background: #22c55e;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primario:hover {
+    background: #1a5a2a;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-secundario {
+    background: transparent;
+    border: 2px solid #22c55e;
+    color: #22c55e;
+    padding: 10px 24px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-secundario:hover {
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+}
+
+/* ============================================================
+   BLOQUE 10: FOOTER
+   ============================================================ */
+
+footer {
+    background-color: #1a5a2a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #c8e6c9;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* ============================================================
+   BLOQUE 11: RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav{
+        flex-direction: row;      /* Cambia de column a row */
+        flex-wrap: wrap;          /* Permite que pasen a la siguiente línea */
+        justify-content: center;  /* Centra los botones */
+        gap: 10px;                /* Espacio entre botones */
+    }
+
+    nav a{
+        width: calc(50% - 10px);  /* Ocupa el 50% menos el gap */
+        margin: 5px 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    .intereses-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .video-container iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 28px;
+    }
+    
+    .testimonios-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .testimonio-card {
+        width: 100%;
+    }
+}

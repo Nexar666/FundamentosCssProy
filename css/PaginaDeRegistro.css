@@ -1,0 +1,126 @@
+/* ============================================================
+   BLOQUE 1: CONTENEDOR PRINCIPAL
+   ============================================================ */
+
+#registro-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+#registro-card {
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    border-radius: 48px;
+    padding: 40px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================================================
+   BLOQUE 2: TÍTULOS
+   ============================================================ */
+
+#registro-title {
+    color: #166534;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+#registro-subtitle {
+    color: #64748b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* ============================================================
+   BLOQUE 3: FORMULARIO DE REGISTRO
+   ============================================================ */
+
+#registro-form .form-group {
+    margin-bottom: 15px;
+}
+
+#fullname, #email-registro, #password-registro, #confirm-password, #role-registro {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#fullname:focus, #email-registro:focus, #password-registro:focus, 
+#confirm-password:focus, #role-registro:focus {
+    outline: none;
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+#btn-registro {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+#btn-registro:hover {
+    background-color: #1a5a2a;
+}
+
+/* ============================================================
+   BLOQUE 4: ENLACES
+   ============================================================ */
+
+#registro-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#registro-links a {
+    color: #1a5a2a;
+    text-decoration: none;
+}
+
+#registro-links a:hover {
+    color: #d32f2f;
+    text-decoration: underline;
+}
+
+#registro-back-home {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    color: #64748b;
+}
+
+#registro-back-home:hover {
+    color: #d32f2f;
+}
+
+/* ============================================================
+   BLOQUE 5: RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 600px) {
+    #registro-card {
+        margin: 20px;
+        padding: 30px 20px;
+        border-radius: 32px;
+    }
+    
+    #registro-title {
+        font-size: 24px;
+    }
+}

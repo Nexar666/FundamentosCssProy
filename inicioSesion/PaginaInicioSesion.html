@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitConnect - Iniciar Sesión</title>
+    <link rel="icon" type="image/x-icon" href="../img/login.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/inicio-sesion.css">
+</head>
+<body>
+
+    <div id="login-container">
+        <main id="login-card">
+            
+            <aside id="welcome-side">
+                <figure id="logo-figure">
+                    <img src="../img/logo.jpg" id="welcome-logo" alt="Logo FitConnect">
+                </figure>
+                <h2 id="welcome-title">¡Bienvenido de vuelta!</h2>
+                <p id="welcome-text">Mantén el ritmo y alcanza tus metas</p>
+            </aside>
+            
+            <section id="form-side">
+                <h1 id="form-title-main">Iniciar Sesión</h1>
+                <p id="form-subtitle">Accede a tu cuenta FitConnect</p>
+                
+                <form action="../deportista/dashboard.html" method="post" id="login-form">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required placeholder="********" minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Tipo de usuario</label>
+                        <select name="role" id="role">
+                            <option value="deportista">Deportista</option>
+                            <option value="entrenador">Entrenador</option>
+                            <option value="admin">Administrador</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="btn-login">Iniciar Sesión</button>
+                </form>
+                
+                <div id="links-container">
+                    <a href="#" id="forgot-password">¿Olvidaste tu contraseña?</a><br>
+                    <a href="../registro/PaginaDeRegistro.html" id="register-link">¿No tienes cuenta? Regístrate</a>
+                </div>
+                <a href="../PaginaPrincipal.html" id="back-home">← Volver al inicio</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

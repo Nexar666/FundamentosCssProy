@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitConnect - Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../img/dashboard.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <header id="dashboard-header">
+        <span id="logo">FitConnect</span>
+        <div id="user-area">
+            <span id="username">Juan Pérez</span>
+            <a href="../inicioSesion/PaginaInicioSesion.html" id="btn-cerrar" class="btn-cerrar">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <div id="dashboard-layout">
+        <nav id="sidebar">
+            <ul id="nav-list">
+                <li class="nav-item active"><a href="dashboard.html">🏠 Inicio</a></li>
+                <li class="nav-item"><a href="rutinas.html">🏋️ Rutinas</a></li>
+                <li class="nav-item"><a href="retos.html">🎯 Retos</a></li>
+                <li class="nav-item"><a href="amigos.html">👥 Amigos</a></li>
+                <li class="nav-item"><a href="../perfil/perfil.html">👤 Perfil</a></li>
+            </ul>
+        </nav>
+        
+        <main id="dashboard-main">
+            <section id="stats-section">
+                <div class="stat-card" id="calorias-card">
+                    <span class="stat-icon">🔥</span>
+                    <h3 class="stat-value">2,450</h3>
+                    <p class="stat-label">Calorías</p>
+                </div>
+                <div class="stat-card" id="horas-card">
+                    <span class="stat-icon">⏱️</span>
+                    <h3 class="stat-value">3.5</h3>
+                    <p class="stat-label">Horas</p>
+                </div>
+                <div class="stat-card" id="sesiones-card">
+                    <span class="stat-icon">🏋️</span>
+                    <h3 class="stat-value">12</h3>
+                    <p class="stat-label">Sesiones</p>
+                </div>
+                <div class="stat-card" id="racha-card">
+                    <span class="stat-icon">⚡</span>
+                    <h3 class="stat-value">7</h3>
+                    <p class="stat-label">Racha días</p>
+                </div>
+            </section>
+             
+            <section id="actividad-reciente">
+                <h2 class="section-title">📋 Actividad Reciente</h2>
+                <ul id="activity-list">
+                    <li class="activity-item"><strong>Carlos Ruiz</strong> completó Cardio Intenso • hace 2h</li>
+                    <li class="activity-item"><strong>Ana López</strong> se unió al reto 30 Días • hace 4h</li>
+                    <li class="activity-item"><strong>Pedro Gómez</strong> publicó nueva rutina • hace 6h</li>
+                </ul>
+            </section>
+             
+            <section id="retos-activos">
+                <h2 class="section-title">🏆 Retos Activos</h2>
+                <p id="reto1-label" class="progress-label"><strong>30 días activos</strong></p>
+                <progress id="reto1-progress" value="82" max="100"></progress>
+                <p id="reto2-label" class="progress-label"><strong>Maratón Virtual</strong></p>
+                <progress id="reto2-progress" value="56" max="100"></progress>
+                <br><br>
+                <a href="retos.html" id="ver-mas-retos" class="btn-primario">Ver más retos →</a>
+            </section>
+        </main>
+    </div>
+
+    <footer id="main-footer">
+        <p>&copy; 2026 FitConnect - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

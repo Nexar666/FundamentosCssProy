@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitConnect - Crear Cuenta</title>
+    <link rel="icon" type="image/x-icon" href="../img/registro.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+
+    <div id="registro-container">
+        <main id="registro-card">
+            <h1 id="registro-title">Crear Cuenta</h1>
+            <p id="registro-subtitle">Únete a la comunidad fitness más activa</p>
+            
+            <form action="../inicioSesion/PaginaInicioSesion.html" method="post" id="registro-form">
+                <div class="form-group">
+                    <input type="text" name="fullname" id="fullname" required placeholder="Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email-registro" required placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password-registro" required placeholder="Mínimo 6 caracteres" minlength="6">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="confirm" id="confirm-password" required placeholder="Repite tu contraseña">
+                </div>
+                <div class="form-group">
+                    <select name="role" id="role-registro">
+                        <option value="deportista">Deportista</option>
+                        <option value="entrenador">Entrenador</option>
+                    </select>
+                </div>
+                <button type="submit" id="btn-registro">Crear cuenta</button>
+            </form>
+            
+            <div id="registro-links">
+                <a href="../inicioSesion/PaginaInicioSesion.html" id="login-link">¿Ya tienes cuenta? Inicia sesión</a>
+            </div>
+            <a href="../PaginaPrincipal.html" id="registro-back-home">← Volver al inicio</a>
+        </main>
+    </div>
+</body>
+</html>

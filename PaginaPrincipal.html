@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitConnect - Red Social para Deportistas</title>
+    <link rel="icon" type="image/x-icon" href="img/homesign_89123.ico"> 
+    <link rel="stylesheet" href="css/general.css"> 
+    <link rel="stylesheet" href="css/PaginaPrincipal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Logo de FitConnect">
+            <a href="PaginaPrincipal.html" class="brand">FitConnect</a>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#intereses">Intereses</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#planes">Planes</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#sugerencias">Sugerencias</a>
+            <a href="#video">Video</a>
+            <a href="inicioSesion/PaginaInicioSesion.html" class="btn-primario">Iniciar Sesión</a>
+            <a href="registro/PaginaDeRegistro.html" class="btn-secundario">Registrarse</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <h1>Conecta, Entrena, Supera</h1>
+            <p>La red social que conecta deportistas, entrenadores y te ayuda a alcanzar tus metas fitness</p>
+            <div class="hero-buttons">
+                <a href="inicioSesion/PaginaInicioSesion.html" class="btn-primario">Iniciar Sesión</a>
+                <a href="registro/PaginaDeRegistro.html" class="btn-secundario">Crear Cuenta</a>
+            </div>
+        </section>
+
+        <section id="intereses" class="intereses-section">
+            <h2>Intereses más populares en FitConnect</h2>
+            <div class="intereses-card">
+                <ul class="intereses-list">
+                    <li>Running - <strong>2,450 usuarios activos</strong></li>
+                    <li>Fuerza - <strong>3,120 usuarios activos</strong></li>
+                    <li>Ciclismo - <strong>1,890 usuarios activos</strong></li>
+                    <li>Yoga - <strong>1,234 usuarios activos</strong></li>
+                    <li>CrossFit - <strong>987 usuarios activos</strong></li>
+                    <li>Natación - <strong>654 usuarios activos</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="testimonios" class="testimonios-section">
+            <h2>Lo que dicen nuestros usuarios</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <span class="testimonio-icon">👩</span>
+                    <p>"FitConnect me ayudó a encontrar entrenamiento y mantener la motivación. ¡He bajado 8 kg en 3 meses!"</p>
+                    <h4>- María García</h4>
+                </div>
+                <div class="testimonio-card">
+                    <span class="testimonio-icon">👨</span>
+                    <p>"Los retos semanales son increíbles. La comunidad es muy activa y siempre hay nuevos desafíos."</p>
+                    <h4>- Carlos Ruiz</h4>
+                </div>
+                <div class="testimonio-card">
+                    <span class="testimonio-icon">🏋️</span>
+                    <p>"Como entrenador, me permite gestionar a mis clientes y crear rutinas personalizadas fácilmente."</p>
+                    <h4>- Entrenador Pedro</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="planes" class="planes-section">
+            <h2>Compara nuestros planes</h2>
+            <div class="table-container">
+                <table class="planes-table">
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Básico (Gratis)</th>
+                            <th>Pro</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Registro de entrenamientos</td>
+                            <td class="check">✅</td>
+                            <td class="check">✅</td>
+                            <td class="check">✅</td>
+                        </tr>
+                        <tr class="alternate">
+                            <td>Conexión con amigos</td>
+                            <td class="check">✅</td>
+                            <td class="check">✅</td>
+                            <td class="check">✅</td>
+                        </tr>
+                        <tr>
+                            <td>Retos exclusivos</td>
+                            <td class="check">❌</td>
+                            <td class="check">✅</td>
+                            <td class="check">✅</td>
+                        </tr>
+                        <tr class="alternate">
+                            <td>Estadísticas avanzadas</td>
+                            <td class="check">❌</td>
+                            <td class="check">✅</td>
+                            <td class="check">✅</td>
+                        </tr>
+                        <tr>
+                            <td>Entrenador personal</td>
+                            <td class="check">❌</td>
+                            <td class="check">❌</td>
+                            <td class="check">✅</td>
+                        </tr>
+                        <tr class="alternate">
+                            <td>Rutinas personalizadas</td>
+                            <td class="check">❌</td>
+                            <td class="check">❌</td>
+                            <td class="check">✅</td>
+                        </tr>
+                        <tr>
+                            <td>Satisfacción</td>
+                            <td><progress value="60" max="100"></progress></td>
+                            <td><progress value="75" max="100"></progress></td>
+                            <td><progress value="95" max="100"></progress></td>
+                        </tr>
+                        <tr class="alternate">
+                            <td><strong>Precio</strong></td>
+                            <td class="price"><strong>$0</strong></td>
+                            <td class="price"><strong>$9.99/mes</strong></td>
+                            <td class="price"><strong>$19.99/mes</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="planes-cta">
+                <a href="registro/PaginaDeRegistro.html" class="btn-primario">¡Empieza gratis ahora!</a>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto-section">
+            <h2>Contacto</h2>
+            <div class="contacto-card">
+                <div class="contacto-grid">
+                    <div class="contacto-item">
+                        <h3>Dirección</h3>
+                        <p>Universidad de las Fuerzas Armadas - ESPE<br>Sede Santo Domingo<br>Calle Principal #123, Santo Domingo<br>Ecuador</p>
+                    </div>
+                    <div class="contacto-item">
+                        <h3>Correo Electrónico</h3>
+                        <p>soporte@fitconnect.com<br>info@fitconnect.com<br>nfriofrio@espe.edu.ec</p>
+                    </div>
+                    <div class="contacto-item">
+                        <h3>Teléfono</h3>
+                        <p>+593 99 462 7333<br>+593 2 299 1234</p>
+                    </div>
+                    <div class="contacto-item">
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 8:00 - 18:00<br>Sábados: 9:00 - 13:00<br>Domingos: Cerrado</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="social-links">
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps" target="_blank">Ubicación</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="video-section">
+            <h2>Mira nuestro video de presentación</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de presentación de FitConnect" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="sugerencias" class="sugerencias-section">
+            <h2>Sugerencias para mejorar FitConnect</h2>
+            <p>Tu opinión es importante. Cuéntanos qué te gustaría ver en la plataforma.</p>
+            <form action="#" method="get" class="sugerencias-form">
+                <input type="text" name="nombre" placeholder="Tu nombre">
+                <input type="email" name="email" placeholder="tu@email.com">
+                
+                <fieldset>
+                    <legend>Tipo de sugerencia:</legend>
+                    <label><input type="radio" name="tipo" value="funcionalidad"> Nueva funcionalidad</label>
+                    <label><input type="radio" name="tipo" value="mejora"> Mejora existente</label>
+                    <label><input type="radio" name="tipo" value="reporte"> Reporte de error</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Área relacionada (puedes seleccionar varias):</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="area" value="diseno"> Diseño / UI</label>
+                        <label><input type="checkbox" name="area" value="entrenamiento"> Entrenamientos / Rutinas</label>
+                        <label><input type="checkbox" name="area" value="social"> Red social / Amigos</label>
+                        <label><input type="checkbox" name="area" value="retos"> Retos / Logros</label>
+                        <label><input type="checkbox" name="area" value="rendimiento"> Rendimiento / Carga</label>
+                        <label><input type="checkbox" name="area" value="otra"> Otra área</label>
+                    </div>
+                </fieldset>
+                
+                <textarea name="sugerencia" rows="4" required placeholder="Describe tu sugerencia en detalle..."></textarea>
+                
+                <select name="prioridad">
+                    <option value="baja">Baja - No urgente</option>
+                    <option value="media">Media - Mejoraría la experiencia</option>
+                    <option value="alta">Alta - Importante para mí</option>
+                    <option value="urgente">Urgente - Necesito esto</option>
+                </select>
+                
+                <button type="submit" class="btn-primario">Enviar sugerencia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FitConnect - Red Social para Deportistas. Todos los derechos reservados.</p>
+        <p>
+            <a href="informativa/PaginaInformativa.html">Acerca de</a> |
+            <a href="contacto/PaginaDeContacto.html">Contacto</a> |
+            <a href="perfil/perfil.html">Perfil</a> |
+            <a href="#inicio">Volver arriba ↑</a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitConnect - Mis Rutinas</title>
+    <link rel="icon" type="image/x-icon" href="../img/rutinas.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/rutinas.css">
+</head>
+<body>
+
+    <header id="rutinas-header">
+        <span id="rutinas-logo">FitConnect</span>
+        <div id="rutinas-user">
+            <span id="rutinas-username">Juan Pérez</span>
+            <a href="../inicioSesion/PaginaInicioSesion.html" id="rutinas-cerrar" class="btn-cerrar">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <div id="rutinas-layout">
+        <nav id="rutinas-sidebar">
+            <ul id="rutinas-nav-list">
+                <li class="rutinas-nav-item"><a href="dashboard.html">🏠 Inicio</a></li>
+                <li class="rutinas-nav-item active"><a href="rutinas.html">🏋️ Rutinas</a></li>
+                <li class="rutinas-nav-item"><a href="retos.html">🎯 Retos</a></li>
+                <li class="rutinas-nav-item"><a href="amigos.html">👥 Amigos</a></li>
+                <li class="rutinas-nav-item"><a href="../perfil/perfil.html">👤 Perfil</a></li>
+            </ul>
+        </nav>
+        
+        <main id="rutinas-main">
+            <section id="registro-entrenamiento">
+                <h2 id="registro-title">📝 Registrar Nuevo Entrenamiento</h2>
+                <form action="#" method="get" id="entrenamiento-form">
+                    <div class="form-group">
+                        <label for="tipo-ejercicio">Tipo de ejercicio:</label>
+                        <select name="tipo" id="tipo-ejercicio">
+                            <option>Running</option>
+                            <option>Fuerza</option>
+                            <option>Ciclismo</option>
+                            <option>Yoga</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="duracion">Duración (minutos):</label>
+                        <input type="number" name="duracion" id="duracion" placeholder="30">
+                    </div>
+                    <div class="form-group">
+                        <label for="calorias">Calorías:</label>
+                        <input type="number" name="calorias" id="calorias" placeholder="250">
+                    </div>
+                    <div class="form-group">
+                        <label for="notas">Notas:</label>
+                        <textarea name="notas" id="notas" rows="3" placeholder="Agrega comentarios sobre tu entrenamiento..."></textarea>
+                    </div>
+                    <button type="submit" id="guardar-btn">Guardar Entrenamiento</button>
+                </form>
+            </section>
+             
+            <section id="historial-entrenamientos">
+                <h2 id="historial-title">📊 Historial de Entrenamientos</h2>
+                <table id="historial-table">
+                    <thead>
+                        <tr><th>Fecha</th><th>Ejercicio</th><th>Duración</th><th>Calorías</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr id="fila1"><td>20/05/2026</td><td>Running</td><td>30 min</td><td>320 kcal</td></tr>
+                        <tr id="fila2" class="fila-destacada"><td>19/05/2026</td><td>Fuerza</td><td>45 min</td><td>280 kcal</td></tr>
+                        <tr id="fila3"><td>18/05/2026</td><td>Ciclismo</td><td>60 min</td><td>450 kcal</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer id="rutinas-footer">
+        <p>&copy; 2026 FitConnect - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

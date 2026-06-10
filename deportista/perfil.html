@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitConnect - Mi Perfil</title>
+    <link rel="icon" type="image/x-icon" href="../img/perfil.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+</head>
+<body>
+
+    <header id="perfil-header">
+        <span id="perfil-logo">FitConnect</span>
+        <div id="perfil-user-actions">
+            <span id="perfil-username">Juan Pérez</span>
+            <a href="../inicioSesion/PaginaInicioSesion.html" id="perfil-cerrar" class="btn-cerrar">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <div id="perfil-layout">
+        <nav id="perfil-sidebar">
+            <div class="perfil-nav-item"><a href="dashboard.html">Inicio</a></div>
+            <div class="perfil-nav-item"><a href="rutinas.html"> Rutinas</a></div>
+            <div class="perfil-nav-item"><a href="retos.html">Retos</a></div>
+            <div class="perfil-nav-item"><a href="amigos.html"> Amigos</a></div>
+            <div class="perfil-nav-item active"><a href="perfil.html"> Perfil</a></div>
+        </nav>
+        
+        <div id="perfil-content">
+            <div id="profile-card">
+                <img src="../img/perfil.jpg" alt="Avatar" id="profile-avatar">
+                <h2 id="profile-name">Juan Pérez</h2>
+                <p id="profile-email">juan.perez@email.com</p>
+                <p id="profile-location">📍 Quito, Ecuador</p>
+                
+                <div id="profile-stats">
+                    <div class="stat-box"><span class="stat-number">128</span><br><span class="stat-label-small">Seguidores</span></div>
+                    <div class="stat-box"><span class="stat-number">45</span><br><span class="stat-label-small">Entrenamientos</span></div>
+                    <div class="stat-box"><span class="stat-number">12</span><br><span class="stat-label-small">Logros</span></div>
+                </div>
+                
+                <div id="achievement-tags">
+                    <span class="badge badge-yellow">🔥 Racha 7 días</span>
+                    <span class="badge badge-green">🥇 Primer 5K</span>
+                    <span class="badge badge-green">💪 1000 calorías</span>
+                    <span class="badge badge-green">🏆 30 días activo</span>
+                </div>
+            </div>
+             
+            <div id="objetivos-section">
+                <h2 class="section-title-green"> Objetivos Deportivos</h2>
+                <ul id="objetivos-list">
+                    <li>Correr 5 km en menos de 25 minutos</li>
+                    <li>Levantar 80 kg en press de banca</li>
+                    <li>Completar 100 km en ciclismo por semana</li>
+                    <li>Meditar 10 minutos diarios</li>
+                </ul>
+            </div>
+             
+            <div id="historial-section">
+                <h2 class="section-title-green">📋 Historial de Actividades</h2>
+                <table id="historial-table">
+                    <thead>
+                        <tr><th>Fecha</th><th>Actividad</th><th>Duración</th><th>Calorías</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hoy</td>
+                            <td>Running</td>
+                            <td>30 min</td>
+                            <td>320 kcal</td>
+                        </tr>
+                        <tr>
+                            <td>Ayer</td>
+                            <td>Fuerza</td>
+                            <td>45 min</td>
+                            <td>280 kcal</td>
+                        </tr>
+                        <tr>
+                            <td>19/05/2026</td>
+                            <td>Ciclismo</td>
+                            <td>60 min</td>
+                            <td>450 kcal</td>
+                        </tr>
+                        <tr>
+                            <td>18/05/2026</td>
+                            <td>Yoga</td>
+                            <td>30 min</td>
+                            <td>120 kcal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="multimedia-section">
+                <h2 class="section-title-green" id="multimedia-title">Contenido Motivacional FitConnect</h2>
+                <p id="multimedia-desc">Música, ejercicios guiados y tips para tu entrenamiento</p>
+                
+                <div id="audio-card" class="motivational-card">
+                    <h3 class="motivational-title">Playlist Motivacional para Entrenar</h3>
+                    <p class="motivational-desc">Escucha esta mezcla de energía para tus rutinas de ejercicio</p>
+                    <audio src="../audio/presentacion.mpeg" controls preload="metadata"></audio>
+                </div>
+
+                <div id="video-card" class="motivational-card">
+                    <h3 class="motivational-title">Tutorial: Rutina de Cardio en Casa (10 min)</h3>
+                    <p class="motivational-desc">Sigue este video para activar tu cuerpo y quemar calorías</p>
+                    <video controls>
+                        <source src="../video/rutina-cardio.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="perfil-footer">
+        <p>&copy; 2026 FitConnect - Red Social para Deportistas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
