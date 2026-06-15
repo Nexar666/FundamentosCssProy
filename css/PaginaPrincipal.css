@@ -16,7 +16,7 @@ header {
     display: flex;
     align-items: center;
     gap: 12px;
-}
+} 
 
 .logo-container img {
     width: 48px;

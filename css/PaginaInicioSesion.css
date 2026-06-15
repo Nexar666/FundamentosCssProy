@@ -9,7 +9,7 @@
     align-items: center;
     background: linear-gradient(135deg, #f0fdf4, #dcfce7);
 }
-
+ 
 #login-card {
     display: flex;
     max-width: 1000px;
